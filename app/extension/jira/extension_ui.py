@@ -4,32 +4,43 @@ from selenium_ui.conftest import print_timing
 from util.conf import JIRA_SETTINGS
 
 
-def app_specific_action_notification_settings(webdriver, datasets):
+def app_specific_action_auto_update_configuration(webdriver, datasets):
     page = BasePage(webdriver)
 
-    @print_timing("selenium_app_custom_action_notification_settings")
+    @print_timing("selenium_app_custom_action_auto_update_configuration")
     def measure():
-        page.go_to_url(f"{JIRA_SETTINGS.server_url}/secure/NotifierConfigWebActionSupport.jspa")
-        page.wait_until_visible((By.ID, "fcm-notifier-status-on"))
+        page.go_to_url(f"{JIRA_SETTINGS.server_url}/plugins/servlet/admin/ftp")
+        page.wait_until_visible((By.ID, "updateenable"))
     measure()
 
 
-def app_specific_action_notification_scheme(webdriver, datasets):
+def app_specific_action_language_configuration(webdriver, datasets):
     page = BasePage(webdriver)
 
-    @print_timing("selenium_app_custom_action_notification_scheme")
+    @print_timing("selenium_app_custom_action_language_configuration")
     def measure():
-        page.go_to_url(f"{JIRA_SETTINGS.server_url}/secure/NotificationSchemaWebAction.jspa?projectKey=KAN")
-        page.wait_until_visible((By.ID, "nfj-default-notification-schema"))
+        page.go_to_url(f"{JIRA_SETTINGS.server_url}/plugins/servlet/admin/resx")
+        page.wait_until_visible((By.ID, "ChkbxStatus"))
     measure()
 
 
-def app_specific_action_notifications_menu(webdriver, datasets):
+def app_specific_action_otj_client(webdriver, datasets):
     page = BasePage(webdriver)
 
-    @print_timing("selenium_app_custom_action_notification_scheme")
+    @print_timing("selenium_app_custom_action_otj_client")
     def measure():
-        page.go_to_url(f"{JIRA_SETTINGS.server_url}/plugins/servlet/upm?source=side_nav_manage_addons")
-        page.wait_until_visible((By.ID, "nfj-notifications-dropdown-menu"))
+        page.go_to_url(f"{JIRA_SETTINGS.server_url}/plugins/servlet/admin/outlook")
+        page.wait_until_visible((By.ID, "outlook"))
     measure()
+
+
+def app_specific_action_otj_data(webdriver, datasets):
+    page = BasePage(webdriver)
+
+    @print_timing("selenium_app_custom_action_otj_data")
+    def measure():
+        page.go_to_url(f"{JIRA_SETTINGS.server_url}/plugins/servlet/admin/otjdata")
+        page.wait_until_visible((By.ID, "resources"))
+    measure()
+
 

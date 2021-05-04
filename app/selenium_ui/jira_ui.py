@@ -62,16 +62,20 @@ Refer to `app/selenium_ui/jira/modules.py` for examples.
 """
 
 
-# def test_1_selenium_custom_action_notification_settings(jira_webdriver, jira_datasets, jira_screen_shots):
-#     extension_ui.app_specific_action_notification_settings(jira_webdriver, jira_datasets)
-#
-#
-# def test_1_selenium_custom_action_notification_scheme(jira_webdriver, jira_datasets, jira_screen_shots):
-#     extension_ui.app_specific_action_notification_scheme(jira_webdriver, jira_datasets)
-#
-#
-# def test_1_selenium_custom_action_notifications_menu(jira_webdriver, jira_datasets, jira_screen_shots):
-#     extension_ui.app_specific_action_notifications_menu(jira_webdriver, jira_datasets)
+def test_1_selenium_custom_action_auto_update_configuration(jira_webdriver, jira_datasets, jira_screen_shots):
+    extension_ui.app_specific_action_auto_update_configuration(jira_webdriver, jira_datasets)
+
+
+def test_1_selenium_custom_action_language_configuration(jira_webdriver, jira_datasets, jira_screen_shots):
+    extension_ui.app_specific_action_language_configuration(jira_webdriver, jira_datasets)
+
+
+def test_1_selenium_custom_action_otj_client(jira_webdriver, jira_datasets, jira_screen_shots):
+    extension_ui.app_specific_action_otj_client(jira_webdriver, jira_datasets)
+
+
+def test_1_selenium_custom_action_otj_data(jira_webdriver, jira_datasets, jira_screen_shots):
+    extension_ui.app_specific_action_otj_data(jira_webdriver, jira_datasets)
 
 
 # this action should be the last one
