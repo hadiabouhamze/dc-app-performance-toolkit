@@ -19,7 +19,7 @@ def app_specific_action_notification_scheme(webdriver, datasets):
 
     @print_timing("selenium_app_custom_action_notification_scheme")
     def measure():
-        page.go_to_url(f"{JIRA_SETTINGS.server_url}/secure/NotificationSchemaWebAction")
+        page.go_to_url(f"{JIRA_SETTINGS.server_url}/secure/NotificationSchemaWebAction?projectKey=KAN")
         page.wait_until_visible((By.ID, "nfj-default-notification-schema"))
     measure()
 
