@@ -24,7 +24,7 @@ def app_specific_action_language_configuration(webdriver, datasets):
     @print_timing("selenium_app_custom_action_language_configuration")
     def measure():
         page.go_to_url(f"{JIRA_SETTINGS.server_url}/plugins/servlet/admin/resx")
-        page.wait_until_visible((By.ID, "lang-config-title"))
+        page.wait_until_visible((By.ID, "lang-config-title-body"))
     measure()
 
 
