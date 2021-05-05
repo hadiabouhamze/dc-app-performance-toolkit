@@ -57,10 +57,10 @@ def test_1_selenium_view_project_summary(jira_webdriver, jira_datasets, jira_scr
 
 # def test_1_selenium_custom_action_auto_update_configuration(jira_webdriver, jira_datasets, jira_screen_shots):
 #     extension_ui.app_specific_action_auto_update_configuration(jira_webdriver, jira_datasets)
-#
-#
-# def test_1_selenium_custom_action_language_configuration(jira_webdriver, jira_datasets, jira_screen_shots):
-#     extension_ui.app_specific_action_language_configuration(jira_webdriver, jira_datasets)
+
+
+def test_1_selenium_custom_action_language_configuration(jira_webdriver, jira_datasets, jira_screen_shots):
+    extension_ui.app_specific_action_language_configuration(jira_webdriver, jira_datasets)
 
 
 def test_1_selenium_custom_action_otj_client(jira_webdriver, jira_datasets, jira_screen_shots):
