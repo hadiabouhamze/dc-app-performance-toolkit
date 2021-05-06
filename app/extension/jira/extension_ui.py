@@ -18,14 +18,14 @@ from util.conf import JIRA_SETTINGS
 #     measure()
 
 
-# def app_specific_action_language_configuration(webdriver, datasets):
-#     page = BasePage(webdriver)
-#
-#     @print_timing("selenium_app_custom_action_language_configuration")
-#     def measure():
-#         page.go_to_url(f"{JIRA_SETTINGS.server_url}/plugins/servlet/admin/resx")
-#         page.wait_until_visible((By.ID, "lang-config-title-body"))
-#     measure()
+def app_specific_action_language_configuration(webdriver, datasets):
+    page = BasePage(webdriver)
+
+    @print_timing("selenium_app_custom_action_language_configuration")
+    def measure():
+        page.go_to_url(f"{JIRA_SETTINGS.server_url}/plugins/servlet/admin/resx")
+        page.wait_until_visible((By.ID, "lang-config-title-body"))
+    measure()
 
 
 def app_specific_action_otj_client(webdriver, datasets):
@@ -35,16 +35,6 @@ def app_specific_action_otj_client(webdriver, datasets):
     def measure():
         page.go_to_url(f"{JIRA_SETTINGS.server_url}/secure/AdminOutlook.jspa")
         page.wait_until_visible((By.ID, "download-button"))
-    measure()
-
-
-def app_specific_action_otj_data(webdriver, datasets):
-    page = BasePage(webdriver)
-
-    @print_timing("selenium_app_custom_action_otj_data")
-    def measure():
-        page.go_to_url(f"{JIRA_SETTINGS.server_url}/plugins/servlet/admin/otjdata")
-        page.wait_until_visible((By.ID, "resources"))
     measure()
 
 
