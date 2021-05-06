@@ -8,14 +8,14 @@ from selenium_ui.jira.pages.pages import Login
 from util.conf import JIRA_SETTINGS
 
 
-# def app_specific_action_auto_update_configuration(webdriver, datasets):
-#     page = BasePage(webdriver)
-#
-#     @print_timing("selenium_app_custom_action_auto_update_configuration")
-#     def measure():
-#         page.go_to_url(f"{JIRA_SETTINGS.server_url}/plugins/servlet/admin/ftp")
-#         page.wait_until_visible((By.ID, "admin"))
-#     measure()
+def app_specific_action_auto_update_configuration(webdriver, datasets):
+    page = BasePage(webdriver)
+
+    @print_timing("selenium_app_custom_action_auto_update_configuration")
+    def measure():
+        page.go_to_url(f"{JIRA_SETTINGS.server_url}/plugins/servlet/admin/ftp")
+        page.wait_until_visible((By.ID, "admin"))
+    measure()
 
 
 def app_specific_action_language_configuration(webdriver, datasets):
