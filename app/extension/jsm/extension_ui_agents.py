@@ -30,7 +30,7 @@ def app_specific_action_customer_issues_history_panel_web_action(webdriver, data
     def measure():
         @print_timing("selenium_agent_app_custom_action:customer_issues_history_panel_web_action")
         def sub_measure():
-            page.go_to_url(f"{JSM_SETTINGS.server_url}/browse/IT-1")
+            page.go_to_url(f"{JSM_SETTINGS.server_url}/browse/CAOERVMVED-6")
             page.wait_until_visible((By.ID, "tcfj-twitter-tickets_heading"))
 
         sub_measure()
@@ -45,7 +45,7 @@ def app_specific_action_link_twitter_account_web_action(webdriver, datasets):
     def measure():
         @print_timing("selenium_agent_app_custom_action:link_twitter_account_web_action")
         def sub_measure():
-            page.go_to_url(f"{JSM_SETTINGS.server_url}/secure/TwitterAccountWebAction.jspa?projectKey=IT")
+            page.go_to_url(f"{JSM_SETTINGS.server_url}/secure/TwitterAccountWebAction.jspa?projectKey=CAOERVMVED")
             page.wait_until_visible((By.ID, "link-twitter-account-container"))
 
         sub_measure()
