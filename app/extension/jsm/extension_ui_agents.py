@@ -14,7 +14,7 @@ def app_specific_action_log_level_web_action(webdriver, datasets):
         @print_timing("selenium_agent_app_custom_action:log_level_web_action")
         def sub_measure():
             page.go_to_url(f"{JSM_SETTINGS.server_url}/secure/LogLevel.jspa")
-            page.wait_until_visible((By.ID, "log-level-main-panel"))
+            page.wait_until_visible((By.ID, "log-level-panel"))
 
         sub_measure()
 
