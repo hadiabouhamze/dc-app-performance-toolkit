@@ -58,12 +58,8 @@ def test_1_selenium_agent_view_queues_small(jsm_webdriver, jsm_datasets, jsm_scr
     modules_agents.view_queues_small(jsm_webdriver, jsm_datasets)
 
 
-def test_1_selenium_agent_custom_action_notification_config_web_action_support(jsm_webdriver, jsm_datasets, jsm_screen_shots):
-    extension_ui_agents.app_specific_action_notification_config_web_action_support(jsm_webdriver, jsm_datasets)
-
-
-def test_1_selenium_agent_custom_action_notification_schema_web_action(jsm_webdriver, jsm_datasets, jsm_screen_shots):
-    extension_ui_agents.app_specific_action_notification_schema_web_action(jsm_webdriver, jsm_datasets)
+def test_1_selenium_agent_custom_action_link_facebook_account_web_action(jsm_webdriver, jsm_datasets, jsm_screen_shots):
+    extension_ui_agents.app_specific_action_link_facebook_account_web_action(jsm_webdriver, jsm_datasets)
 
 
 # this action should be the last one

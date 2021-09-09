@@ -6,29 +6,16 @@ from selenium_ui.jsm.pages.agent_pages import Login
 from util.conf import JSM_SETTINGS
 
 
-def app_specific_action_notification_config_web_action_support(webdriver, datasets):
+def app_specific_action_link_facebook_account_web_action(webdriver, datasets):
     page = BasePage(webdriver)
 
-    @print_timing("selenium_agent_app_custom_action_notification_config_web_action_support")
+    @print_timing("selenium_agent_app_custom_action_link_facebook_account_web_action")
     def measure():
-
-        @print_timing("selenium_agent_app_custom_action:notification_config_web_action_support")
+        @print_timing("selenium_agent_app_custom_action:link_facebook_account_web_action")
         def sub_measure():
-            page.go_to_url(f"{JSM_SETTINGS.server_url}/secure/NotificationsConfigWebActionSupport.jspa")
-            page.wait_until_visible((By.ID, "project-filter"))
+            page.go_to_url(f"{JSM_SETTINGS.server_url}/secure/FacebookAccountWebAction.jspa?projectKey=SDP")
+            page.wait_until_visible((By.ID, "react"))
+
         sub_measure()
-    measure()
 
-
-def app_specific_action_notification_schema_web_action(webdriver, datasets):
-    page = BasePage(webdriver)
-
-    @print_timing("selenium_agent_app_custom_action_notification_schema_web_action")
-    def measure():
-
-        @print_timing("selenium_agent_app_custom_action:notification_schema_web_action")
-        def sub_measure():
-            page.go_to_url(f"{JSM_SETTINGS.server_url}/secure/MFJSDCNotificationSchemaWebAction.jspa?projectKey=CAOERVMVED")
-            page.wait_until_visible((By.ID, "system-rules-table"))
-        sub_measure()
     measure()
