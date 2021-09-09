@@ -1020,7 +1020,7 @@ JMeterUtils.setProperty(&quot;c_AtlToken&quot; + user_counter, atl_token)
             <boolProp name="independentListPerThread">false</boolProp>
           </com.blazemeter.jmeter.RandomCSVDataSetConfig>
           <hashTree/>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="small project actions" enabled="true"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="small project actions" enabled="false"/>
           <hashTree>
             <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="agent_view_queues_small" enabled="true">
               <intProp name="ThroughputController.style">1</intProp>
@@ -4704,7 +4704,7 @@ if ( sleep_time &gt; 0 ) {
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="medium project actions" enabled="true"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="medium project actions" enabled="false"/>
           <hashTree>
             <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If medium projects size exist" enabled="true">
               <stringProp name="IfController.condition">${__isVarDefined(m_service_desk_id)}</stringProp>
@@ -8395,7 +8395,7 @@ if ( sleep_time &gt; 0 ) {
               </hashTree>
             </hashTree>
           </hashTree>
-          <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="agent_browse_projects" enabled="true">
+          <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="agent_browse_projects" enabled="false">
             <intProp name="ThroughputController.style">1</intProp>
             <boolProp name="ThroughputController.perThread">false</boolProp>
             <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -8643,7 +8643,7 @@ if ( sleep_time &gt; 0 ) {
               <hashTree/>
             </hashTree>
           </hashTree>
-          <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="agent_view_request" enabled="true">
+          <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="agent_view_request" enabled="false">
             <intProp name="ThroughputController.style">1</intProp>
             <boolProp name="ThroughputController.perThread">false</boolProp>
             <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -8958,7 +8958,7 @@ if ( sleep_time &gt; 0 ) {
               <hashTree/>
             </hashTree>
           </hashTree>
-          <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="agent_add_comment" enabled="true">
+          <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="agent_add_comment" enabled="false">
             <intProp name="ThroughputController.style">1</intProp>
             <boolProp name="ThroughputController.perThread">false</boolProp>
             <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -9542,7 +9542,7 @@ if ( sleep_time &gt; 0 ) {
               <hashTree/>
             </hashTree>
           </hashTree>
-          <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="agent_view_customers" enabled="true">
+          <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="agent_view_customers" enabled="false">
             <intProp name="ThroughputController.style">1</intProp>
             <boolProp name="ThroughputController.perThread">false</boolProp>
             <intProp name="ThroughputController.maxThroughput">1</intProp>
